@@ -1,8 +1,9 @@
+import ProductView from "./features/products/ProductView";
 
 const App = () => {
   return (
     <div>
-      App
+  <ProductView /> 
     </div>
   );
 };
