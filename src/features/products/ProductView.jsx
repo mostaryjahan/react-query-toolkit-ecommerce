@@ -2,7 +2,7 @@
 const ProductView = () => {
     return (
         <div>
-            List of products
+            <h2>List of products</h2>
         </div>
     );
 };
