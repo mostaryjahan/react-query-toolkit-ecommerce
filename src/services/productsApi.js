@@ -1,3 +1,13 @@
-import { createApi } from "@reduxjs/toolkit/query/react";
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-createApi()
+export const productsAPi = createApi({
+  reducerPath: "productsApi",
+  baseQuery: fetchBaseQuery({
+    baseUrl: "http://fakestoreapi.com/",
+  }),
+  endpoints: (builder) => ({
+    getProducts: builder.query({
+        query: () => 'products'
+    })
+  })
+});
